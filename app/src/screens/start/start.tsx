@@ -21,7 +21,7 @@ export default function GetStartedScreen({ navigation }: Props) {
         </Text>
         <RoundButton
           text="Get Started"
-          onPress={() => navigate(init.Profile, { screen: init.Token})}
+          onPress={() => navigate(init.Token, { screen: init.Verify})}
         />
       </ImageBackground>
     </View>

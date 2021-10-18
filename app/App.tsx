@@ -87,7 +87,7 @@ console.log(results)
       <AccountContext.Provider value={{ state, dispatch }}>
         <NavigationContainer ref={navigationRef}>
           {/* <AppContainer /> */}
-          {state.users !== null ? <ProfileNavigator /> : <UserNavigator />}
+          {state.users.length !== null ? <ProfileNavigator /> : <UserNavigator />}
         </NavigationContainer>
       </AccountContext.Provider>
     </View>

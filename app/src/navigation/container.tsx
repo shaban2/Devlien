@@ -11,8 +11,8 @@ export const AppContainer = createSwitchNavigator(
     [init.Start]: GetStartedScreen,
     // [init.Otp]: tokenScreenPresenter,
     // [profile.Register]: ProfilePresenter,
-    [init.Profile]: UserNavigator,
-    [init.Token]: ProfileNavigator,
+    [init.Token]: UserNavigator,
+    [init.Profile]: ProfileNavigator,
   
   },
   {
