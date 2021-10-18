@@ -48,7 +48,6 @@ export const AvatarInput: React.SFC<Props> = (props) => {
             source={{ uri: props.image, width: 60, height: 60 }}
           />
         ) : (
-          // <Ionicons name="ios-person-add" size={75} color="grey" />
           <Image source={AddPerson} style={{width:60,height:60}}></Image>
         )}
 

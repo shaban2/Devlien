@@ -18,13 +18,12 @@ export const TokenContainer = () => {
   const [email, setEmail] = React.useState<string>("");
   const [phone, setPhone] = React.useState<string>("");
 
- 
   const submit = () => {
     axios
       .post(
         "http://192.168.43.105:8000/api/account",
         {
-          name:name,
+          name: name,
           email: email,
           phone_number: phone,
         },
@@ -38,12 +37,11 @@ export const TokenContainer = () => {
       .then((resJson) => {
         dispatch(AddAccount(resJson.data));
         // console.log(resJson);
-      }) 
-      
+      })
+
       .then(() => {
         navigate(init.Profile, { screen: profile.Register });
-      })
-     
+      });
   };
   console.log("here");
 

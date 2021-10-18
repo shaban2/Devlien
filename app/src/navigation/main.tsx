@@ -12,7 +12,7 @@ const Stack = createStackNavigator();
 
 export const UserNavigator: React.FC = () => {
   return (
-    <Stack.Navigator initialRouteName={init.Token} headerMode="none">
+    <Stack.Navigator initialRouteName={init.Verify} headerMode="none">
       <Stack.Screen name={init.Token} component={TokenContainer} />
     </Stack.Navigator>
   );
